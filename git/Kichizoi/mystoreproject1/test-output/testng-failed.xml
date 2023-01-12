@@ -8,18 +8,26 @@
     <parameter name="browser" value="Chrome"/>
     <groups>
       <run>
-        <include name="Regression"/>
+        <include name="Smoke"/>
       </run>
     </groups>
     <classes>
-      <class name="com.mystore.testcases.Checkoutpagetest">
+      <class name="com.mystore.testcases.Loginpagetest">
         <methods>
-          <include name="setup"/>
           <include name="loadConfig"/>
           <include name="teardown"/>
-          <include name="shopnow"/>
+          <include name="setup"/>
+          <include name="logintest"/>
         </methods>
-      </class> <!-- com.mystore.testcases.Checkoutpagetest -->
+      </class> <!-- com.mystore.testcases.Loginpagetest -->
+      <class name="com.mystore.testcases.Indextest">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="teardown"/>
+          <include name="verifytilte"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.Indextest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
